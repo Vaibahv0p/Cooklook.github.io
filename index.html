@@ -1,1 +1,41 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooking Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Cooking Challenge</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#search">Find Recipes</a>
+<a href="#challenge">Challenge Mode</a>
+</nav>
+</header>
+<main>
+<section id="home" class="intro">
+<h2>Welcome to Cooking Challenge!</h2>
+<p>Input your ingredients, find amazing recipes, or take on a timed cooking challenge!</p>
+</section>
+<section id="search" class="recipes">
+<h2>Find Recipes by Ingredients</h2>
+<input type="text" id="ingredients" placeholder="Enter ingredients (e.g., apple, flour)">
+<button onclick="findRecipes()">Search</button>
+<div id="recipe-results"></div>
+</section>
+<section id="challenge" class="challenge-mode">
+<h2>Challenge Mode</h2>
+<button onclick="startChallenge()">Start Challenge</button>
+<div id="challenge-timer">10:00</div>
+<div id="challenge-recipe"></div>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 Cooking Challenge. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
